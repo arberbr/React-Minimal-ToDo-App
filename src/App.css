@@ -1,0 +1,151 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+	font-size: 18px;
+	line-height: 1.6;
+}
+
+.container {
+	max-width: 1270px;
+	width:100%;
+	margin: 0 auto;
+}
+
+.app-header {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+	clear: both;
+	padding: 15px;
+	background-color: #eee;
+	color: #333;
+}
+
+.header-menu {
+	display: flex;
+	flex-flow: row;
+}
+
+.header-menu li {
+	margin: 0 5px;
+}
+
+.app-body {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+	clear: both;
+	padding: 15px;
+}
+
+.taskslist-box {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+	clear: both;
+	max-width: 360px;
+	margin: 20px auto;
+	box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+}
+
+.tasks-box-header,
+.tasks-box-footer {
+	display: block;
+	width: 100%;
+	height: auto;
+	padding: 15px;
+	background-color: #eee;
+	color: #222;
+}
+
+.tasks-box-footer {
+	font-size: 16px;
+}
+
+.add-task {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+	clear: both;
+	padding: 15px;
+}
+
+.add-task input {
+	display: block;
+	width: 100%;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	padding: 8px;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.add-task button {
+	display: block;
+	width: 100%;
+	border: none;
+	background-color: #333333;
+	color: #fff;
+	padding: 8px;
+	border-radius: 5px;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.tasks-box {
+	display: block;
+	width: 100%;
+	height: auto;
+	clear: both;
+	padding: 15px;
+}
+
+.tasks-box span {
+	text-decoration: line-through;
+	cursor: pointer;
+}
+
+.tasks-box span.active {
+	text-decoration: none;
+}
+
+.tasks-box ul li {
+	display: flex;
+	padding: 5px;
+	justify-content: space-between;
+	background-color: #eee;
+	margin: 5px 0;
+}
+
+.tasks-box ul li span {
+	width: 90%;
+	display: inline-block;
+	word-wrap: break-word;
+}
+
+.tasks-box ul li:hover {
+	background-color: #ddd;
+}
+
+.remove-task {
+	background-color: #333;
+	color: #fff;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+}
