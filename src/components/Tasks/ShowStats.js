@@ -7,11 +7,16 @@ const ShowStats = ({ tasksList }) => {
 		return task.active ? nonCompletedTasksCount++ : nonCompletedTasksCount;
 	});
 
-	return (
-		<div className="show-stats-box">
-			{nonCompletedTasksCount} Tasks remaining from {tasksList.length}
-		</div>
-	);
+	let stats = '';
+	if (nonCompletedTasksCount === 0) {
+		stats = 'Hooray, you are a task master!';
+	} else {
+		stats = `${nonCompletedTasksCount} Tasks remaining from ${
+			tasksList.length
+		}`;
+	}
+
+	return <div className="show-stats-box">{stats}</div>;
 };
 
 export default ShowStats;

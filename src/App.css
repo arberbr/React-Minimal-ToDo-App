@@ -1,19 +1,25 @@
 * {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box !important;
+	-moz-box-sizing: border-box !important;
+	box-sizing: border-box !important;
 }
 
 body {
-	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	line-height: 1.6;
 }
 
 .container {
 	max-width: 1270px;
-	width:100%;
+	width: 100%;
 	margin: 0 auto;
+}
+
+.editable-content {
+	display: block;
+	width: 100%;
+	cursor: pointer;
 }
 
 .app-header {
@@ -61,7 +67,7 @@ body {
 	clear: both;
 	max-width: 360px;
 	margin: 15px;
-	box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
+	border: 1px solid #ddd;
 	border-radius: 5px;
 	vertical-align: top;
 }
@@ -122,12 +128,10 @@ body {
 .tasks-box span {
 	text-decoration: line-through;
 	cursor: pointer;
-
 }
 
 .tasks-box span.active {
 	text-decoration: none;
-
 }
 
 .tasks-box ul li {

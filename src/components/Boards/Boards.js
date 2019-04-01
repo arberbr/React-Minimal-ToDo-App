@@ -26,7 +26,7 @@ class Boards extends Component {
 	boardNameChangeHandler = boardId => {
 		const newBoards = this.state.boards.filter(board => {
 			if (board.id === boardId) {
-				board.editing = true;
+				board.editing = !board.editing;
 			}
 			return board;
 		});
