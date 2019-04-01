@@ -1,10 +1,10 @@
 import React from 'react';
 import ShowStats from './ShowStats';
 
-const TasksListFooter = (props) => {
+const TasksListFooter = props => {
 	return (
 		<div className="tasks-box-footer">
-			<ShowStats tasksList={props.tasksList}/>
+			<ShowStats tasksList={props.tasksList} />
 		</div>
 	);
 };
