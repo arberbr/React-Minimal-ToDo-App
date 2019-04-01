@@ -24,7 +24,8 @@ body {
 
 .app-header {
 	position: relative;
-	display: block;
+	display: flex;
+	justify-content: space-between;
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -173,4 +174,10 @@ body {
 	width: 100%;
 	color: #cc1212;
 	font-weight: 600;
+}
+
+@media (max-width: 480px) {
+	.taskslist-box {
+		margin: 20px auto;
+	}
 }
