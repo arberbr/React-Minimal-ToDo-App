@@ -48,18 +48,22 @@ class TasksList extends Component {
 	};
 
 	deleteSingleTask = taskId => {
-		const chosenTask = this.state.tasks.filter(task => {
+		const newTasks = this.state.tasks.filter(task => {
 			return task.id !== taskId;
 		});
 		this.setState({
-			tasks: chosenTask
+			tasks: newTasks
 		});
 	};
 
 	render() {
 		return (
 			<div className="taskslist-box">
-				<TasksListHeader />
+				<TasksListHeader
+					board={this.props.board}
+					boardNameChange={(event) => this.props.changeBoardName(event)}
+					onChangeBoardName={(event, boardId) => this.props.onBoardNameChange(event, boardId)}
+					submitBoardNameChange={(event, boardId) => this.props.submitBoardNameChange(event, boardId) } />
 				<AddTask
 					addTask={() => this.addTaskHandler()}
 					changed={event => this.onChangeHandler(event)}

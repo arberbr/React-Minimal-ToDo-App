@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './assets/css/reset.css';
 import './App.css';
 
-import TasksList from './components/Tasks/TasksList';
+import Boards from './components/Boards/Boards';
 
 class App extends Component {
 	render() {
@@ -10,20 +10,14 @@ class App extends Component {
 			<div className="App">
 				
 				<div className="app-header">
-					<div className="container">
-						
-						<ul className="header-menu">
-							<li>Home</li>
-							<li>Tasks</li>
-						</ul>
-						
-					</div>
+					<ul className="header-menu">
+						<li>Home</li>
+						<li>Tasks</li>
+					</ul>
 				</div>
 				
 				<div className="app-body">
-					<div className="container">
-						<TasksList />
-					</div>
+					<Boards />
 				</div>
 				
 			</div>
